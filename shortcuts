@@ -17,6 +17,7 @@ p        Paste yanked content
 P        Paste yanked content BEFORE
 u        Undo
 C-r      Redo
+Ctrl + [  === Esc
 ```
 ### Editing ###
 ```
