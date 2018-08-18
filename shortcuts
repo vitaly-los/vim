@@ -207,6 +207,8 @@ use Ctrl+q to make terminal work again.
 For typing № operation 
 №i Type Esc
 
+To enable change in .vimrc file save it :w and then :so % what is meant source file
+
 ```
 ###Mix###
 ```
