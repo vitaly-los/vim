@@ -37,7 +37,9 @@ das      Delete a senctence
 diw      Delete word under cursor
 df<c>    Delete until next occurence of <c> (char) found (including <c>) [in single line]
 dt<c>    Delete until next occurence of <c> (char) found (without <c>!!!) [in single line]
-
+da'      Delete all in '' on line
+da[      Delete all in [] on line
+da{      Delete all in {} on line
 ciw      Change word under cursor 
 ciB      Change inner '{' '}' block
 cf<c>    See "df<c>" but change instead of delete
