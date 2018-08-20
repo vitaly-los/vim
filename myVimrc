@@ -1,6 +1,7 @@
-" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-" vim ~/.vimrc
-
+"git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" Make dir colors in .vim folder cd ~/.vim  mkdir colors
+" wget https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark-256.vim
+colorscheme atom-dark-256
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -11,16 +12,26 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'StanAngeloff/php.vim'
-Plugin 'jiangmiao/auto-pairs'
-
 
 call vundle#end()            " required
 filetype plugin indent on    " required
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginClean      - confirms removal of unused plugins;
 
 set tabstop=4 shiftwidth=4 expandtab 
 set number
 
+"---------- Mapping --------------"
+nmap <Leader>ev :e ~/.vimrc
+
+"---------- Split Management --------------"
+nmap <C-J> <C-W><C-J>
+nmap <C-K> <C-W><C-K>
+nmap <C-H> <C-W><C-H>
+nmap <C-L> <C-W><C-L>
+
 "====[ Swap : and ; to make colon commands easier to type  ]======
 nnoremap  ;  :
 nnoremap  :  ;
+
+
