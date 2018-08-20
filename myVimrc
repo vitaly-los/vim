@@ -1,7 +1,4 @@
 "git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-" Make dir colors in .vim folder cd ~/.vim  mkdir colors
-" wget https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark-256.vim
-colorscheme atom-dark-256
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -33,5 +30,12 @@ nmap <C-L> <C-W><C-L>
 "====[ Swap : and ; to make colon commands easier to type  ]======
 nnoremap  ;  :
 nnoremap  :  ;
+
+" Make dir colors in .vim folder cd ~/.vim  mkdir colors
+" wget https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark-256.vim
+set background=dark
+colorscheme atam-dark-256
+" set t-CO=256
+
 
 
