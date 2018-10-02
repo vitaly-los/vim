@@ -63,6 +63,7 @@ gqq      format current line according to line-width
 ```
 u        Convert selection (visual mode) to lowercase
 U        Convert selection (visual mode) to uppercase
+shift + ~ convert character to uppercase under cursor in ocmmand mode
 ```
 ```
 :g/^#/d  Delete all lines that begins with #
