@@ -16,6 +16,9 @@ Plugin 'StanAngeloff/php.vim'
 Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'luochen1990/rainbow'
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'davidhalter/jedi-vim'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
@@ -32,6 +35,7 @@ nnoremap  :  ;
 
 "---------- Setting --------------"
 set tabstop=4 shiftwidth=4 expandtab 
+set autochdir
 set number
 
 "---------- Split Management --------------"
@@ -42,8 +46,20 @@ nmap <C-L> <C-W><C-L>
 
 "----------Plugins --------------"
 map <F3> :NERDTreeToggle<cr>
-let g:rainbow_active = 1 
 
+" Colour braces
+let g:rainbow_active = 1
+
+
+"set t_CO=256
 set background=dark
 colorscheme atom-dark-256
-"set t_CO=256
+
+
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+" Enable folding with the spacebar
+nnoremap <space> za
+
+
