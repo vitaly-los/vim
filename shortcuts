@@ -162,7 +162,7 @@ Ctrl-w <    Resizing the width of the current window by a single column
 :res +5     Resize +5 lines in tab
 :res -5      Resize -5 lines in tab
 
-:vertical resize 80
+:vertical resize 90   right for NERDTreeToggle
 :vertical resize +5
 :vertical resize -5
 ```
