@@ -1,7 +1,7 @@
 "git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 " Make dir colors in .vim folder cd ~/.vim  mkdir colors
 " wget https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark-256.vim
-
+" Plugin 'thaerkh/vim-workspace' autosave plugin    let g:workspace_autosave_always = 1
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -17,7 +17,9 @@ Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'luochen1990/rainbow'
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'davidhalter/jedi-vim'
+Plugin '907th/vim-auto-save'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -34,9 +36,14 @@ nnoremap  ;  :
 nnoremap  :  ;
 
 "---------- Setting --------------"
+let g:auto_save = 1  " enable AutoSave on Vim startup 
+let g:auto_save_silent = 1  " do not display the auto-save notification 
+let g:auto_save_events = ["InsertLeave", "TextChanged", "TextChangedI", "CursorHoldI"]  " autosave event
+
 set tabstop=4 shiftwidth=4 expandtab 
-set autochdir
+set autochdir   " 
 set number
+set encoding=utf-8
 
 "---------- Split Management --------------"
 nmap <C-J> <C-W><C-J>
@@ -61,5 +68,10 @@ set foldmethod=indent
 set foldlevel=99
 " Enable folding with the spacebar
 nnoremap <space> za
+
+
+
+
+
 
 
