@@ -49,6 +49,9 @@ nmap <C-K> <C-W><C-K>
 nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
 
+"----------Plugins --------------"
+
+autocmd vimenter * NERDTree
 
 " Colour braces
 let g:rainbow_active = 1
