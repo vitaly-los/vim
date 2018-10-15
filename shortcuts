@@ -53,6 +53,8 @@ Ctrl+t   Auto indent in Insert mode
 gq       (in visual-mode) format selected text according to line-width
 gqq      format current line according to line-width
 #gqq     format next #-lines  
+
+w !sudo tee %   if forget sudo when editing
 ```
 
 ```
