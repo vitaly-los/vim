@@ -45,7 +45,8 @@ ciB      Change inner '{' '}' block
 cf<c>    See "df<c>" but change instead of delete
 ct<c>    See "dt<c>" but change instead of delete
 .        Repeat Last Editing operation
-
+Ctrl+d   Auto indent in Insert mode
+Ctrl+t   Auto indent in Insert mode
 #J       Merge # number of lines together
 ```
 ```
