@@ -1,7 +1,6 @@
 # [My Vim setting](http://tao12345666333.github.com/vim)
 [![Build Status](https://travis-ci.org/tao12345666333/vim.png)](https://travis-ci.org/tao12345666333/vim)
 
-## [中文说明](README-zh.md)
 
 ## screenshot
 
