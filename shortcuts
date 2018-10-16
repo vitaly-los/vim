@@ -10,6 +10,8 @@ v        Enter visual mode for selection of LINES
 C-v      Enter visual mode for selection of BLOCKS
 y        Yank/copy selected region
 yy       Yank/copy entire line
+y2y      Yank 2 lines
+y3y      Yank 3 lines
 "<reg>y  Yank/copy marked region into register <reg> (register from a-z)
 c        Cut selection
 p        Paste yanked content
@@ -21,6 +23,7 @@ Ctrl + [  === Esc
 ```
 ### Editing ###
 ```
+:t.        Dublicate line
 x        Delete char UNDER cursor
 X        Delete char BEFORE cursor
 #x       Delete the next # chars. starting from char under cursor
