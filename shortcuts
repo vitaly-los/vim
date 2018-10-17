@@ -19,11 +19,12 @@ p        Paste yanked content
 P        Paste yanked content BEFORE
 u        Undo
 C-r      Redo
-Ctrl + [  === Esc
+C-[      == Esc
 ```
 ### Editing ###
 ```
-:t.        Dublicate line
+:t.      Dublicate line
+C-w      Delete word in insert mode  
 x        Delete char UNDER cursor
 X        Delete char BEFORE cursor
 #x       Delete the next # chars. starting from char under cursor
