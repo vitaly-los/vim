@@ -24,7 +24,8 @@ C-[      == Esc
 ### Editing ###
 ```
 :t.      Dublicate line
-C-w      Delete word in insert mode  
+C-w      Delete word in insert mode 
+C-u      Delete line in insert mode
 x        Delete char UNDER cursor
 X        Delete char BEFORE cursor
 #x       Delete the next # chars. starting from char under cursor
@@ -139,9 +140,9 @@ g;       jump back to last edited position.
 
 # Files #
 ```
-1 Ctrl+g        path of current file
-Ctrl+G          relatile path of current file
-Ctrl+r %        In insert mode insert file's name
+1 C-g        path of current file
+C-G          relatile path of current file
+C-r %        In insert mode insert file's name
 
 :bp             Buffer Previous open previous opened file
 :b[1-9]         open buffered file
@@ -160,11 +161,11 @@ C-wARROW    Jump to window left/right/top/bottom (arrow keys) to the current
 C-w _       To increase a window to its maximum height
 C-w |       To increase a window to its maximum width
 
-Ctrl-w =    To resize all windows to equal dimensions based on their splits
-Ctrl-w +    Resizing the height of the current window by a single row
-Ctrl-w -    Resizing the height of the current window by a single row
-Ctrl-w >    Resizing the width of the current window by a single column
-Ctrl-w <    Resizing the width of the current window by a single column
+C-w =    To resize all windows to equal dimensions based on their splits
+C-w +    Resizing the height of the current window by a single row
+C-w -    Resizing the height of the current window by a single row
+C-w >    Resizing the width of the current window by a single column
+C-w <    Resizing the width of the current window by a single column
 
 :res +5     Resize +5 lines in tab
 :res -5      Resize -5 lines in tab
