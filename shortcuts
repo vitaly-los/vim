@@ -218,6 +218,9 @@ use Ctrl+q to make terminal work again.
 For typing № operation 
 №i Type Esc
 
+```
+:help ins-special-keys   get manual about shortcuts in insert mode
+
 To enable change in .vimrc file save it :w and then :so % what is meant source file
 
 scriptname  give all info about plugin loag before vim
