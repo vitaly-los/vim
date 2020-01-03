@@ -26,6 +26,7 @@ C-[      == Esc
 :t.      Dublicate line
 C-w      Delete word in insert mode 
 C-u      Delete line in insert mode
+r-       In Normal mode replace symbol r + [a-z]
 x        Delete char UNDER cursor
 X        Delete char BEFORE cursor
 #x       Delete the next # chars. starting from char under cursor
@@ -34,7 +35,7 @@ dW       Delete UP TO the next word
 d^       Delete up unto the beginning of the line
 d$       Delete until end of the line 
 D        See d$, delete until end of the line  
-dd       Delete whole line
+dd       Delete whole line and register it in vim buffer
 dib      Delete contents in parenthesis '(' ')' block (e.g. function args)
 diB      Delete inner '{' '}' block
 daB      Delete a '{' '}' block
@@ -198,7 +199,7 @@ s        Erase the current letter under the cursor, set insert-mode
 S        Erase the whole line, set insert-mode
 cc       Delete the current line, set insert-mode
 cw       Delete word, set insert-mode
-dd       Delete line under curser
+ce       Delete to end of the word
 ```
 ### Exit ###
 ```
