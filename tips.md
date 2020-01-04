@@ -153,14 +153,6 @@ n     next occurrence
 #### Insert previously yanked text in line after current ####
 `oESCp` 
 
-#### Search for selected text ####
-`<select> y / C-r0` 
-```
-<select> Select text in VISUAL mode (v)
-y        Yank selection
-/        Search for
-C-r0     Press Ctrl-R and 0 to paste in
-```
 
 #### Comment out selection ####
 `C-v <select> # ESC ESC`
