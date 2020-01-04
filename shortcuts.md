@@ -313,27 +313,36 @@ ga       Show ASCII of char under cursor
 ## .vimrc ##
 ```
 " EITHER the entire 81st column, full-screen...
+
 highlight ColorColumn ctermbg=magenta
+
 set colorcolumn=81
 
 " OR ELSE just the 81st column of wide lines...
+
 highlight ColorColumn ctermbg=magenta
+
 call matchadd('ColorColumn', '\%81v', 100)
 
 
 "====[ Swap : and ; to make colon commands easier to type ]======
+
 nnoremap  ;  :
+
 nnoremap  :  ;
 
 
 " OR ELSE use the filetype mechanism to select automatically...
+
 filetype on
 augroup PatchDiffHighlight
     autocmd!
     autocmd FileType  diff   syntax enable
 augroup END
 
+
 " EITHER select by the file-suffix directly...
+
 augroup PatchDiffHighlight
     autocmd!
     autocmd BufEnter  *.patch,*.rej,*.diff   syntax enable
@@ -385,15 +394,18 @@ auto correction of frequently misspelled words.
 :abbr hte the
 ```
 
+
 # Configuration #
 * If you set the **incsearch** option, Vim will show the first match for the pattern, while you are still typing it. This quickly shows a typo in the pattern.
 * If you set the __hlsearch__ option, Vim will highlight all matches for the pattern with a yellow background. This gives a quick overview of where the search command will take you. In program code it can show where a variable is used. You don't even have to move the cursor to see the matches.
+
 
 # NERD-tree #
 https://github.com/scrooloose/nerdtree/blob/master/doc/NERD_tree.txt
 ```
 F3       Toogle NERD-Tree visible 
 ```
+
 
 # ctrlp.vim #
 https://github.com/kien/ctrlp.vim
@@ -410,6 +422,8 @@ C-b      Change mode: mru (most recent used) | buffers | files
 Use `gq` (see Editing section) for formating lines according to configured line-width. 
 For C++ formating using clang-format see https://github.com/rhysd/vim-clang-format
 
+
+
 # Links #
 ## Cheat sheets ##
 * http://www.worldtimzone.com/res/vi.html
@@ -418,10 +432,12 @@ For C++ formating using clang-format see https://github.com/rhysd/vim-clang-form
 * http://www.fprintf.net/vimCheatSheet.html
 * [Yet Another Vim Cheat Sheet](http://rtorruellas.com/vim-cheat-sheet/)
 
+
 ## Articles ##
 * Seven habits of effective text editing: http://www.moolenaar.net/habits.html
 * Vim After 11 Years: http://statico.github.com/vim.html
 * Coming Home to Vim: http://stevelosh.com/blog/2010/09/coming-home-to-vim 
+
 
 ## tipps and tricks ##
 *  [medium.com](https://medium.com/@schtoeffel/you-don-t-need-more-than-one-cursor-in-vim-2c44117d51db/) MultiSelection on vim
