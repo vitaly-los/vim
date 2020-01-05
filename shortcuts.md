@@ -158,7 +158,7 @@ C-r %        In insert mode insert file's name
 :e .            list of all files in folder
 ```
 
-#####Inserting a file#####
+#### Inserting a file ####
 
 :r[ead] [name]	  Insert the file [name] below the cursor.
 
