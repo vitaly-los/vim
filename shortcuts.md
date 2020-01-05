@@ -89,6 +89,8 @@ k        cursor up
 ```
 
 ```
+_Screen movement commands_
+
 H        Jump to TOP of screen
 M        Jump to MIDDLE of screen
 L        Jump to BOTTOM of screen
@@ -96,6 +98,9 @@ C-b      Move back one full screen (page up)
 C-f      Move forward one full screen (page down)
 C-d      Move forward 1/2 screen; half page down
 C-u      Move back (up) 1/2 screen; half page up
+zz  	  Center the screen on the cursor
+zt	    Scroll the screen so the cursor is at the top
+zb	    Scroll the screen so the cursor is at the bottom
 ```
 
 ```
