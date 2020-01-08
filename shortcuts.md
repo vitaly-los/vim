@@ -223,3 +223,10 @@ ZZ        write/save and close
 :x        save and quit, same as wq
 :q!       force close if file has changed and not save changes
 ```
+
+### Plugins ###
+
+```
+m     ON NERDTREE files mod
+
+```
