@@ -2,7 +2,14 @@
 ```
 If VIM freeze of hang because you type Ctrl+S (it enables terminal scroll lock) trying to save file,
 use Ctrl+q to make terminal work again. 
+```
+bellow :term   ---  give a terminal window in vim. Within Terminal-Job mode, pressing Ctrl-W N or Ctrl-\ Ctrl-N switches the mode to Terminal-Normal, which allows the cursor to be moved and commands to be ran similarly to Vim's Normal mode. To switch back to Terminal-Job mode, press i. 
+The way that I get around this is:
+pause Vim with Ctrl + Z,
+play in the terminal,
+then return to exactly where you left with Vim by just typing the command fg.
 
+```
 For typing № operation 
 №i Type Esc
 
