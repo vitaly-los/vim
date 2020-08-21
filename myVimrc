@@ -7,6 +7,15 @@ filetype off                  " required
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
+
+" Add support for PHP autocomplete
+Plug 'phpactor/phpactor', {'do': 'composer install', 'for': 'php'}
+Plug 'phpactor/ncm2-phpactor'
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-path'
+
 Plug 'jiangmiao/auto-pairs'
 Plug 'luochen1990/rainbow'
 Plug 'tmhedberg/SimpylFold'
@@ -21,7 +30,7 @@ Plug 'mattn/emmet-vim'
 Plug 'zhou13/vim-easyescape'
 
 call plug#end() 
-" :PlugInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PlugInstall    - installs plugins; append `!` to update or just :PlugUpdate
 " :PlugClean      - confirms removal of unused plugins
 " :PlugStatus     - check the status of plugins
 
@@ -93,3 +102,8 @@ let g:easyescape_chars = { "j": 1, "k": 1  }
 let g:easyescape_timeout = 100
 cnoremap jk <ESC>
 cnoremap kj <ESC>
+
+" enable ncm2 for all buffers
+autocmd BufEnter * call ncm2#enable_for_buffer()
+set completeopt=noinsert,menuone,noselect
+let g:phpactorPhpBin = "/usr/bin/php7.3"
