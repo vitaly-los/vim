@@ -156,6 +156,7 @@ C-r %        In insert mode insert file's name
 :pwd            Print Working Directory
 :ls             list
 :e .            list of all files in folder
+:so %           source file
 ```
 
 ### Inserting a file ###
