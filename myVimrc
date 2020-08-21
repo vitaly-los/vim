@@ -1,31 +1,29 @@
 "git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 " Make dir colors in .vim folder cd ~/.vim  mkdir colors
 " wget https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark-256.vim
-" Youcomplete me install ins. on gitgub
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'luochen1990/rainbow'
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'Vimjas/vim-python-pep8-indent'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'thaerkh/vim-workspace'
-Plugin 'nvie/vim-flake8'
-Plugin 'tpope/vim-surround'   
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'tpope/vim-fugitive'
-Plugin 'mattn/emmet-vim'
-call vundle#end()            " required
-filetype plugin indent on    " required
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginClean      - confirms removal of unused plugins
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree'
+Plug 'jiangmiao/auto-pairs'
+Plug 'luochen1990/rainbow'
+Plug 'tmhedberg/SimpylFold'
+Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'thaerkh/vim-workspace'
+Plug 'nvie/vim-flake8'
+Plug 'tpope/vim-surround'   
+Plug 'tpope/vim-fugitive'
+Plug 'mattn/emmet-vim'
+Plug 'zhou13/vim-easyescape'
+
+call plug#end() 
+" :PlugInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PlugClean      - confirms removal of unused plugins
+" :PlugStatus     - check the status of plugins
 
 
 " OR ELSE just the 81st column of wide lines...
@@ -66,6 +64,9 @@ autocmd vimenter * NERDTree
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']     " Ignore files in NERDTree
 let NERDTreeWinSize=40
 
+" Disable docstring window to popup for Jedi
+autocmd FileType python setlocal completeopt-=preview
+
 " Colour braces
 let g:rainbow_active = 1
 
@@ -86,3 +87,9 @@ set foldmethod=indent
 set foldlevel=99
 " Enable folding with the spacebar
 nnoremap <space> za
+
+" For easy escape plugin
+let g:easyescape_chars = { "j": 1, "k": 1  }
+let g:easyescape_timeout = 100
+cnoremap jk <ESC>
+cnoremap kj <ESC>
