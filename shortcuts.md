@@ -24,8 +24,6 @@ C-[      == Esc
 ### Editing ###
 ```
 :t.      Dublicate line
-C-w      Delete word in insert mode 
-C-u      Delete line in insert mode
 r-       In Normal mode replace symbol r + [a-z]
 x        Delete char UNDER cursor
 X        Delete char BEFORE cursor
@@ -90,17 +88,28 @@ k        cursor up
 
 ```
 _Screen movement commands_
+Moving by Screens
 
-H        Jump to TOP of screen
-M        Jump to MIDDLE of screen
-L        Jump to BOTTOM of screen
-C-b      Move back one full screen (page up)
-C-f      Move forward one full screen (page down)
-C-d      Move forward 1/2 screen; half page down
-C-u      Move back (up) 1/2 screen; half page up
-zz  	  Center the screen on the cursor
-zt	    Scroll the screen so the cursor is at the top
-zb	    Scroll the screen so the cursor is at the bottom
+The following commands are used as a quick way to move within the text without scrolling.
+
+    Ctrl + b – move back one full screen
+    Ctrl + f – move forward one full screen
+    Ctrl + d – move forward 1/2 a screen
+    Ctrl + u – move back 1/2 a screen
+    Ctrl + e – move screen down one line (without moving the cursor)
+    Ctrl + y – move screen up one line (without moving the cursor)
+    Ctrl + o – move backward through the jump history
+    Ctrl + i – move forward through the jump history
+
+ 
+
+    H – move to the top of the screen (H=high)
+    M – move to the middle of the screen (M=middle)
+    L – move to the bottom of the screen (L=low)
+
+    zz - Center the screen on the cursor
+    zt - Scroll the screen so the cursor is at the top
+    zb - Scroll the screen so the cursor is at the bottom
 ```
 
 ```
@@ -112,15 +121,34 @@ b        jump backward by words (punctuation considered words)
 $        end of line
 G        bottom of file
 gg       top of file
-```
-_good to know_
-```
 E        jump to end of words (no punctuation)
 W        jump by words (spaces separate words)
 B        jump backward by words (no punctuation)
 #G       goto line #
 #gg      goto line #
 :132     go to line 132
+```
+INSERT MODE
+```
+Ctrl-h      " delete one character
+Ctrl-w      " delete one word
+Ctrl-u      " delete entire line
+Ctrl-r "    # insert the last yank/delete
+Ctrl-r %    # insert file name
+Ctrl-r /    # insert last search term
+Ctrl-r :    # insert last command line
+Ctrl-x Ctrl-y   " scroll up
+Ctrl-x Ctrl-e   " scroll down
+Ctrl-x Ctrl-l   " insert a whole line
+Ctrl-x Ctrl-n   " insert a text from current file
+Ctrl-x Ctrl-i   " insert a text from included files
+Ctrl-x Ctrl-f   " insert a file name
+Ctrl-x Ctrl-]   " insert from tags (must have tags)
+Ctrl-x Ctrl-o   " insert from omnicompletion. Filetype specific.
+Ctrl-o   " You'll be in insert-normal sub-mode. You can do one normal mode command. Some things you can do:
+Ctrl-o zz    " center window
+Ctrl-o H/M/L " jump to top/middle/bottom window
+Ctrl-o 'a    " jump to mark 'a'
 ```
 
 ### Search, jump ###
