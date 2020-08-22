@@ -113,22 +113,22 @@ The following commands are used as a quick way to move within the text without s
 ```
 
 ```
-w        jump by start of words (punctuation considered words)
-e        jump to end of words (punctuation considered words)
-b        jump backward by words (punctuation considered words)
-0 (zero) start of line
-^        first non-blank character of line
-$        end of line
-G        bottom of file
-gg       top of file
-E        jump to end of words (no punctuation)
-W        jump by words (spaces separate words)
-B        jump backward by words (no punctuation)
-#G       goto line #
-#gg      goto line #
-:132     go to line 132
+    w        jump by start of words (punctuation considered words)
+    e        jump to end of words (punctuation considered words)
+    b        jump backward by words (punctuation considered words)
+    0 (zero) start of line
+    ^        first non-blank character of line
+    $        end of line
+    G        bottom of file
+    gg       top of file
+    E        jump to end of words (no punctuation)
+    W        jump by words (spaces separate words)
+    B        jump backward by words (no punctuation)
+    #G       goto line #
+    #gg      goto line #
+    :132     go to line 132
 ```
-INSERT MODE
+### Insert Mode ###
 ```
 Ctrl-h      " delete one character
 Ctrl-w      " delete one word
