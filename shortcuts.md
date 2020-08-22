@@ -49,8 +49,6 @@ ciB      Change inner '{' '}' block
 cf<c>    See "df<c>" but change instead of delete
 ct<c>    See "dt<c>" but change instead of delete
 .        Repeat Last Editing operation
-Ctrl+d   Auto indent in Insert mode
-Ctrl+t   Auto indent in Insert mode
 #J       Merge # number of lines together
 ```
 ```
@@ -130,13 +128,13 @@ The following commands are used as a quick way to move within the text without s
 ```
 ### Insert Mode ###
 ```
-Ctrl-h      " delete one character
-Ctrl-w      " delete one word
-Ctrl-u      " delete entire line
-Ctrl-r "    # insert the last yank/delete
-Ctrl-r %    # insert file name
-Ctrl-r /    # insert last search term
-Ctrl-r :    # insert last command line
+Ctrl-h          " delete one character
+Ctrl-w          " delete one word
+Ctrl-u          " delete entire line
+Ctrl-r "        " insert the last yank/delete
+Ctrl-r %        " insert file name
+Ctrl-r /        " insert last search term
+Ctrl-r :        " insert last command line
 Ctrl-x Ctrl-y   " scroll up
 Ctrl-x Ctrl-e   " scroll down
 Ctrl-x Ctrl-l   " insert a whole line
@@ -145,10 +143,12 @@ Ctrl-x Ctrl-i   " insert a text from included files
 Ctrl-x Ctrl-f   " insert a file name
 Ctrl-x Ctrl-]   " insert from tags (must have tags)
 Ctrl-x Ctrl-o   " insert from omnicompletion. Filetype specific.
-Ctrl-o   " You'll be in insert-normal sub-mode. You can do one normal mode command. Some things you can do:
-Ctrl-o zz    " center window
-Ctrl-o H/M/L " jump to top/middle/bottom window
-Ctrl-o 'a    " jump to mark 'a'
+Ctrl-o          " You'll be in insert-normal sub-mode. You can do one normal mode command. Some things you can do:
+Ctrl-o zz       " center window
+Ctrl-o H/M/L    " jump to top/middle/bottom window
+Ctrl-o 'a       " jump to mark 'a'
+Ctrl+d          " Auto indent shift + tabs
+Ctrl+t          " Auto indent tabs
 ```
 
 ### Search, jump ###
