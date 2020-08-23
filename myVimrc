@@ -1,4 +1,6 @@
 "git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+noremap <silent> <space> :exe "normal i".nr2char(getchar())<CR>
 " Make dir colors in .vim folder cd ~/.vim  mkdir colors
 " wget https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark-256.vim
 
@@ -6,7 +8,9 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 call plug#begin('~/.vim/plugged')
-Plug 'scrooloose/nerdtree'
+
+" Nerdtree + modifications
+Plug 'preservim/nerdtree'
 
 " Add support for PHP autocomplete
 Plug 'phpactor/phpactor', {'do': 'composer install', 'for': 'php'}
@@ -67,6 +71,12 @@ nmap <C-K> <C-W><C-K>
 nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
 
+"--------- Mapping ------------"
+:imap \nn <C-O>o
+
+
+
+
 "----------Plugins --------------"
 " on vim start nerdtree
 autocmd vimenter * NERDTree
@@ -90,7 +100,7 @@ let g:airline_theme='badwolf'
 " let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline_powerline_fonts=1
-            
+
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
@@ -107,3 +117,21 @@ cnoremap kj <ESC>
 autocmd BufEnter * call ncm2#enable_for_buffer()
 set completeopt=noinsert,menuone,noselect
 let g:phpactorPhpBin = "/usr/bin/php7.3"
+
+" NERDTress File highlighting
+function! NERDTreeHighlightFile(extension, fg, bg)
+ exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+ exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:bg .' guifg='. a:fg
+endfunction
+
+call NERDTreeHighlightFile('jpg', 'blue', 'black')
+call NERDTreeHighlightFile('png', 'blue', 'black')
+call NERDTreeHighlightFile('php', 'magenta', 'black')
+call NERDTreeHighlightFile('py', 'magenta', 'black')
+call NERDTreeHighlightFile('sh', 'green', 'black')
+call NERDTreeHighlightFile('css', 'yellow', 'black')
+call NERDTreeHighlightFile('json', 'yellow', 'black')
+call NERDTreeHighlightFile('ini', 'yellow', 'black')
+call NERDTreeHighlightFile('html', 'yellow', 'black')
+call NERDTreeHighlightFile('gz', 'red', 'black')
+call NERDTreeHighlightFile('zip', 'red', 'black')
