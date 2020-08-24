@@ -147,8 +147,12 @@ Ctrl-o          " You'll be in insert-normal sub-mode. You can do one normal mod
 Ctrl-o zz       " center window
 Ctrl-o H/M/L    " jump to top/middle/bottom window
 Ctrl-o 'a       " jump to mark 'a'
-Ctrl+d          " Auto indent shift + tabs
-Ctrl+t          " Auto indent tabs
+Ctrl+d          " un-indent current line
+Ctrl+t          " indent current line
+CTRL-J          " insert newline (easier than reaching for the return key)
+Ctrl+E          " insert the character which is below the cursor
+
+:help insert-index :) https://vimhelp.org/index.txt.html#insert-index 
 ```
 
 ### Search, jump ###
