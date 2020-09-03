@@ -198,20 +198,24 @@ C-r %        In insert mode insert file's name
 :r[ead] !{cmd}	     Execute {cmd} and insert its standard output below the cursor.
 ```
 
-### Windows ####
+### Split ####
 ```
-:sp         gorisontal split
+:sp         horisontal split
 :vsp        vertical split
 C-ww        Jump to the next window
 C-wARROW    Jump to window left/right/top/bottom (arrow keys) to the current
 C-w _       To increase a window to its maximum height
 C-w |       To increase a window to its maximum width
 
-C-w =    To resize all windows to equal dimensions based on their splits
-C-w +    Resizing the height of the current window by a single row
-C-w -    Resizing the height of the current window by a single row
-C-w >    Resizing the width of the current window by a single column
-C-w <    Resizing the width of the current window by a single column
+C-w =       To resize all windows to equal dimensions based on their splits
+C-w +       Resizing the height of the current window by a single row
+C-w -       Resizing the height of the current window by a single row
+C-w >       Resizing the width of the current window by a single column
+C-w <       Resizing the width of the current window by a single column
+
+z=          To resize all windows to equal dimensions based on their splits, same as C-w =
+z0<CR>      To minimize height of current window
+z99<CR>     to maxmize height of current window
 
 :res +5     Resize +5 lines in tab
 :res -5      Resize -5 lines in tab
