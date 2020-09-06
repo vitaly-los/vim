@@ -23,7 +23,10 @@ C-[      == Esc
 ```
 ### Editing ###
 ```
+
 :t.      Dublicate line
+:2t.     Copy second line
+:2,5t.   Copy from second to fifth line
 r-       In Normal mode replace symbol r + [a-z]
 x        Delete char UNDER cursor
 X        Delete char BEFORE cursor
