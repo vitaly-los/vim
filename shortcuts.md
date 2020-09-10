@@ -238,7 +238,21 @@ z99<CR>     to maxmize height of current window
 :tabn 2            tab number 
 
 vim -p file1.txt file2.txt      start Vim and open  files in diff tabs
+gt              in Normal mod go netx tab
 ```
+
+### Buffers ###
+```
+:bfirst:        change to first buffer
+:blast:         change to last buffer
+:bnext:         change to next buffer
+:bprevious:     change to previous buffer
+
+NUM Ctrl-6      to go to a particular buffer. Add support for buffer in airline plugin
+:b <TAB>        to choose from currently opened buffers.
+:ls             list of all buffers
+```
+
 ### Entering insert mode ###
 ```
 a        Append text after the cursor
