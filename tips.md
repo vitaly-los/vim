@@ -36,6 +36,8 @@ r<c>     Replace char <c>
 #r<c>    Replace follow # chars with <c>, : csock, cursor on s, 3re ceeek
 4gg2yy    Come to 4 line and copy 2 string
 ```
+  
+gg=G  it fixes indentation over all document
 
 ### vimgrep and quickfix list ###
 built-in grep, vimgrep uses vim's quickfix list. see vimcasts#44 for introduction: http://vimcasts.org/episodes/search-multiple-files-with-vimgrep/
