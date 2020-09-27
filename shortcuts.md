@@ -138,6 +138,7 @@ Ctrl-r "        " insert the last yank/delete
 Ctrl-r %        " insert file name
 Ctrl-r /        " insert last search term
 Ctrl-r :        " insert last command line
+Ctrl-r =        " evaluates and insert result
 Ctrl-x Ctrl-y   " scroll up
 Ctrl-x Ctrl-e   " scroll down
 Ctrl-x Ctrl-l   " insert a whole line
@@ -154,6 +155,8 @@ Ctrl+d          " un-indent current line
 Ctrl+t          " indent current line
 CTRL-J          " insert newline (easier than reaching for the return key)
 Ctrl+E          " insert the character which is below the cursor
+Ctrl+Y          " insert the character which is above the cursor
+
 
 :help insert-index :) https://vimhelp.org/index.txt.html#insert-index 
 ```
