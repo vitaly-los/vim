@@ -154,8 +154,9 @@ Ctrl-o 'a       " jump to mark 'a'
 Ctrl+d          " un-indent current line
 Ctrl+t          " indent current line
 CTRL-J          " insert newline (easier than reaching for the return key)
-Ctrl+E          " insert the character which is below the cursor
-Ctrl+Y          " insert the character which is above the cursor
+Ctrl+e          " insert the character which is below the cursor
+Ctrl+y          " insert the character which is above the cursor
+Ctrl+a          " insert again whatever the most-recent inserted text was 
 
 
 :help insert-index :) https://vimhelp.org/index.txt.html#insert-index 
