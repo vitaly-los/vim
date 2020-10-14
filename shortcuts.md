@@ -166,7 +166,7 @@ Ctrl+a          " insert again whatever the most-recent inserted text was
 consider consulting `:help [` and `:help g`
 
 ```
-*        search for word under cursor (forward) and highlight occurrence (see incsearch, hlsearch below)
+*        search for word under cursor (forward) and highlight occurrence (see incsearch, hlsearch below). Same Shift + 3
 %        jump from open/close ( / #if / ( / { to corresponding ) / #endif / } 
 [{       jump to start of current code block
 ]}       jump to end of current code block
