@@ -251,7 +251,9 @@ gt              in Normal mod go netx tab
 :blast:         change to last buffer
 :bnext:         change to next buffer
 :bprevious:     change to previous buffer
-
+:bdelete        delete buffer and close window
+:bclose         close buffer but no window
+:bclose N       close N buffer but no window
 NUM Ctrl-6      to go to a particular buffer. Add support for buffer in airline plugin
 :b <TAB>        to choose from currently opened buffers.
 :ls             list of all buffers
