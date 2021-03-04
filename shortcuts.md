@@ -161,6 +161,12 @@ Ctrl+a          " insert again whatever the most-recent inserted text was
 
 :help insert-index :) https://vimhelp.org/index.txt.html#insert-index 
 ```
+### Visual Mode ###
+```
+>               intend line 
+>iB             intend inside block
+```
+
 
 ### Search, jump ###
 consider consulting `:help [` and `:help g`
